@@ -67,16 +67,6 @@ class BonusServiceTest {
         assertEquals(expected, actual);
     }
     @Test
-    void shouldCalculateNotRegisteredAndEqualToLimit() {
-        BonusService service = new BonusService();
-
-        long amount = 50000_00;
-        boolean registered = false;
-        long expected = 500;
-        long actual = service.calculate(amount, registered);
-        assertEquals(expected, actual);
-    }
-    @Test
     void shouldCalculateRegisteredAndEqualToLimit() {
         BonusService service = new BonusService();
 
